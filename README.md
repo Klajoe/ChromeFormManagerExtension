@@ -1,1 +1,1 @@
-# ChromeFormManagerExtension
+# Saves and fills form data for any website without using chrome password keeper and save sensitive information with sha-256

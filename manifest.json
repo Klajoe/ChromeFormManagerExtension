@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Form Saver & Filler",
+    "version": "1.0",
+    "description": "Saves and fills form data for any website.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Form Manager"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
